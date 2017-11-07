@@ -1,0 +1,10 @@
+F:\DnD\D-D\DnD\DnD\bin\Debug\DnD.exe.config
+F:\DnD\D-D\DnD\DnD\bin\Debug\DnD.exe
+F:\DnD\D-D\DnD\DnD\bin\Debug\DnD.pdb
+F:\DnD\D-D\DnD\DnD\obj\Debug\DnD.csprojResolveAssemblyReference.cache
+F:\DnD\D-D\DnD\DnD\obj\Debug\DnD.Properties.Resources.resources
+F:\DnD\D-D\DnD\DnD\obj\Debug\DnD.csproj.GenerateResource.Cache
+F:\DnD\D-D\DnD\DnD\obj\Debug\DnD.csproj.CoreCompileInputs.cache
+F:\DnD\D-D\DnD\DnD\obj\Debug\DnD.exe
+F:\DnD\D-D\DnD\DnD\obj\Debug\DnD.pdb
+F:\DnD\D-D\DnD\DnD\obj\Debug\DnD.CharacterhStatsForm.resources
