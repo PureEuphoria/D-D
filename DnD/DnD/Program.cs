@@ -16,7 +16,7 @@ namespace DnD
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CharacterhStatsForm());
+            Application.Run(new CharacterStatsForm());
         }
     }
 }

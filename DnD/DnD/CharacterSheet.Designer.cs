@@ -1,6 +1,6 @@
 ﻿namespace DnD
 {
-    partial class CharacterhStatsForm
+    partial class CharacterStatsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharacterhStatsForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CharacterStatsForm));
             this.atributesGroupBox1 = new System.Windows.Forms.GroupBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.genderTextBox = new System.Windows.Forms.TextBox();
             this.deityTextBox = new System.Windows.Forms.TextBox();
             this.ageTextBox = new System.Windows.Forms.TextBox();
@@ -45,18 +47,21 @@
             this.weightLabel = new System.Windows.Forms.Label();
             this.raceLabel = new System.Windows.Forms.Label();
             this.expGroupBox = new System.Windows.Forms.GroupBox();
+            this.levelDownButton = new System.Windows.Forms.Button();
+            this.levelUpButton = new System.Windows.Forms.Button();
             this.levelTextBox = new System.Windows.Forms.TextBox();
             this.levelLabel = new System.Windows.Forms.Label();
             this.initiaveGroubBox = new System.Windows.Forms.GroupBox();
             this.initiaveMiscLabel = new System.Windows.Forms.Label();
             this.initiaveHalfLevelLabel = new System.Windows.Forms.Label();
             this.initiaveDexLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.initiaveMiscTextBox = new System.Windows.Forms.TextBox();
             this.initiaveHelfLevelTextBox = new System.Windows.Forms.TextBox();
             this.initiaveDexTextBox = new System.Windows.Forms.TextBox();
             this.initiaveLabel = new System.Windows.Forms.Label();
             this.initiaveTextBox = new System.Windows.Forms.TextBox();
             this.speedGroubBox = new System.Windows.Forms.GroupBox();
+            this.itemLabel = new System.Windows.Forms.Label();
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -160,6 +165,23 @@
             this.acTotalTextBox = new System.Windows.Forms.TextBox();
             this.acEnhTextBox = new System.Windows.Forms.TextBox();
             this.skillGroupBox = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.theiveryMiscTextBox = new System.Windows.Forms.TextBox();
             this.streetwiseMiscTextBox = new System.Windows.Forms.TextBox();
             this.thieveryArmorPenTextBox = new System.Windows.Forms.TextBox();
@@ -282,26 +304,12 @@
             this.languagesGroupBox = new System.Windows.Forms.GroupBox();
             this.languagesTextBox = new System.Windows.Forms.TextBox();
             this.exitButton = new System.Windows.Forms.Button();
-            this.itemLabel = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.levelUpButton = new System.Windows.Forms.Button();
-            this.levelDownButton = new System.Windows.Forms.Button();
+            this.loadButton = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.heightTextBox = new System.Windows.Forms.TextBox();
+            this.heightLabel = new System.Windows.Forms.Label();
             this.atributesGroupBox1.SuspendLayout();
             this.expGroupBox.SuspendLayout();
             this.initiaveGroubBox.SuspendLayout();
@@ -317,6 +325,10 @@
             // 
             // atributesGroupBox1
             // 
+            this.atributesGroupBox1.Controls.Add(this.heightTextBox);
+            this.atributesGroupBox1.Controls.Add(this.heightLabel);
+            this.atributesGroupBox1.Controls.Add(this.nameTextBox);
+            this.atributesGroupBox1.Controls.Add(this.nameLabel);
             this.atributesGroupBox1.Controls.Add(this.genderTextBox);
             this.atributesGroupBox1.Controls.Add(this.deityTextBox);
             this.atributesGroupBox1.Controls.Add(this.ageTextBox);
@@ -338,60 +350,77 @@
             this.atributesGroupBox1.TabIndex = 0;
             this.atributesGroupBox1.TabStop = false;
             // 
+            // nameTextBox
+            // 
+            this.nameTextBox.Location = new System.Drawing.Point(6, 32);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(115, 20);
+            this.nameTextBox.TabIndex = 14;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLabel.Location = new System.Drawing.Point(6, 9);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(51, 20);
+            this.nameLabel.TabIndex = 13;
+            this.nameLabel.Text = "Name";
+            // 
             // genderTextBox
             // 
-            this.genderTextBox.Location = new System.Drawing.Point(203, 33);
+            this.genderTextBox.Location = new System.Drawing.Point(296, 32);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.Size = new System.Drawing.Size(59, 20);
             this.genderTextBox.TabIndex = 12;
             // 
             // deityTextBox
             // 
-            this.deityTextBox.Location = new System.Drawing.Point(461, 33);
+            this.deityTextBox.Location = new System.Drawing.Point(560, 32);
             this.deityTextBox.Name = "deityTextBox";
             this.deityTextBox.Size = new System.Drawing.Size(85, 20);
             this.deityTextBox.TabIndex = 9;
             // 
             // ageTextBox
             // 
-            this.ageTextBox.Location = new System.Drawing.Point(145, 33);
+            this.ageTextBox.Location = new System.Drawing.Point(256, 32);
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(34, 20);
             this.ageTextBox.TabIndex = 8;
             // 
             // alignmentTextBox
             // 
-            this.alignmentTextBox.Location = new System.Drawing.Point(365, 33);
+            this.alignmentTextBox.Location = new System.Drawing.Point(478, 32);
             this.alignmentTextBox.Name = "alignmentTextBox";
             this.alignmentTextBox.Size = new System.Drawing.Size(76, 20);
             this.alignmentTextBox.TabIndex = 11;
             // 
             // weightTextBox
             // 
-            this.weightTextBox.Location = new System.Drawing.Point(286, 33);
+            this.weightTextBox.Location = new System.Drawing.Point(361, 32);
             this.weightTextBox.Name = "weightTextBox";
-            this.weightTextBox.Size = new System.Drawing.Size(55, 20);
+            this.weightTextBox.Size = new System.Drawing.Size(39, 20);
             this.weightTextBox.TabIndex = 10;
             // 
             // sizeTextBox
             // 
-            this.sizeTextBox.Location = new System.Drawing.Point(88, 33);
+            this.sizeTextBox.Location = new System.Drawing.Point(214, 32);
             this.sizeTextBox.Name = "sizeTextBox";
             this.sizeTextBox.Size = new System.Drawing.Size(36, 20);
             this.sizeTextBox.TabIndex = 8;
             // 
             // raceTextBox
             // 
-            this.raceTextBox.Location = new System.Drawing.Point(11, 33);
+            this.raceTextBox.Location = new System.Drawing.Point(127, 32);
             this.raceTextBox.Name = "raceTextBox";
-            this.raceTextBox.Size = new System.Drawing.Size(61, 20);
+            this.raceTextBox.Size = new System.Drawing.Size(82, 20);
             this.raceTextBox.TabIndex = 7;
             // 
             // alignmentLabel
             // 
             this.alignmentLabel.AutoSize = true;
             this.alignmentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alignmentLabel.Location = new System.Drawing.Point(361, 9);
+            this.alignmentLabel.Location = new System.Drawing.Point(476, 8);
             this.alignmentLabel.Name = "alignmentLabel";
             this.alignmentLabel.Size = new System.Drawing.Size(80, 20);
             this.alignmentLabel.TabIndex = 6;
@@ -401,7 +430,7 @@
             // 
             this.deityLabel.AutoSize = true;
             this.deityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deityLabel.Location = new System.Drawing.Point(457, 9);
+            this.deityLabel.Location = new System.Drawing.Point(559, 8);
             this.deityLabel.Name = "deityLabel";
             this.deityLabel.Size = new System.Drawing.Size(45, 20);
             this.deityLabel.TabIndex = 5;
@@ -411,7 +440,7 @@
             // 
             this.sizeLabel.AutoSize = true;
             this.sizeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sizeLabel.Location = new System.Drawing.Point(84, 9);
+            this.sizeLabel.Location = new System.Drawing.Point(212, 8);
             this.sizeLabel.Name = "sizeLabel";
             this.sizeLabel.Size = new System.Drawing.Size(40, 20);
             this.sizeLabel.TabIndex = 4;
@@ -421,7 +450,7 @@
             // 
             this.areLabel.AutoSize = true;
             this.areLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.areLabel.Location = new System.Drawing.Point(141, 9);
+            this.areLabel.Location = new System.Drawing.Point(254, 8);
             this.areLabel.Name = "areLabel";
             this.areLabel.Size = new System.Drawing.Size(38, 20);
             this.areLabel.TabIndex = 3;
@@ -431,7 +460,7 @@
             // 
             this.genderLabel.AutoSize = true;
             this.genderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderLabel.Location = new System.Drawing.Point(199, 9);
+            this.genderLabel.Location = new System.Drawing.Point(292, 8);
             this.genderLabel.Name = "genderLabel";
             this.genderLabel.Size = new System.Drawing.Size(63, 20);
             this.genderLabel.TabIndex = 2;
@@ -441,7 +470,7 @@
             // 
             this.weightLabel.AutoSize = true;
             this.weightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightLabel.Location = new System.Drawing.Point(282, 9);
+            this.weightLabel.Location = new System.Drawing.Point(357, 8);
             this.weightLabel.Name = "weightLabel";
             this.weightLabel.Size = new System.Drawing.Size(59, 20);
             this.weightLabel.TabIndex = 1;
@@ -451,7 +480,7 @@
             // 
             this.raceLabel.AutoSize = true;
             this.raceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.raceLabel.Location = new System.Drawing.Point(7, 9);
+            this.raceLabel.Location = new System.Drawing.Point(126, 9);
             this.raceLabel.Name = "raceLabel";
             this.raceLabel.Size = new System.Drawing.Size(47, 20);
             this.raceLabel.TabIndex = 0;
@@ -469,6 +498,26 @@
             this.expGroupBox.TabIndex = 1;
             this.expGroupBox.TabStop = false;
             // 
+            // levelDownButton
+            // 
+            this.levelDownButton.Location = new System.Drawing.Point(24, 31);
+            this.levelDownButton.Name = "levelDownButton";
+            this.levelDownButton.Size = new System.Drawing.Size(41, 20);
+            this.levelDownButton.TabIndex = 18;
+            this.levelDownButton.Text = "-";
+            this.levelDownButton.UseVisualStyleBackColor = true;
+            this.levelDownButton.Click += new System.EventHandler(this.levelDownButton_Click);
+            // 
+            // levelUpButton
+            // 
+            this.levelUpButton.Location = new System.Drawing.Point(118, 30);
+            this.levelUpButton.Name = "levelUpButton";
+            this.levelUpButton.Size = new System.Drawing.Size(41, 20);
+            this.levelUpButton.TabIndex = 17;
+            this.levelUpButton.Text = "+";
+            this.levelUpButton.UseVisualStyleBackColor = true;
+            this.levelUpButton.Click += new System.EventHandler(this.levelUpButton_Click);
+            // 
             // levelTextBox
             // 
             this.levelTextBox.Enabled = false;
@@ -476,7 +525,7 @@
             this.levelTextBox.Name = "levelTextBox";
             this.levelTextBox.Size = new System.Drawing.Size(41, 20);
             this.levelTextBox.TabIndex = 15;
-            this.levelTextBox.Text = "1";
+            this.levelTextBox.Text = "3";
             this.levelTextBox.TextChanged += new System.EventHandler(this.levelTextBox_TextChanged);
             // 
             // levelLabel
@@ -494,7 +543,7 @@
             this.initiaveGroubBox.Controls.Add(this.initiaveMiscLabel);
             this.initiaveGroubBox.Controls.Add(this.initiaveHalfLevelLabel);
             this.initiaveGroubBox.Controls.Add(this.initiaveDexLabel);
-            this.initiaveGroubBox.Controls.Add(this.textBox2);
+            this.initiaveGroubBox.Controls.Add(this.initiaveMiscTextBox);
             this.initiaveGroubBox.Controls.Add(this.initiaveHelfLevelTextBox);
             this.initiaveGroubBox.Controls.Add(this.initiaveDexTextBox);
             this.initiaveGroubBox.Controls.Add(this.initiaveLabel);
@@ -534,15 +583,16 @@
             this.initiaveDexLabel.TabIndex = 4;
             this.initiaveDexLabel.Text = "DEX";
             // 
-            // textBox2
+            // initiaveMiscTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(239, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(37, 22);
-            this.textBox2.TabIndex = 5;
+            this.initiaveMiscTextBox.Location = new System.Drawing.Point(239, 32);
+            this.initiaveMiscTextBox.Name = "initiaveMiscTextBox";
+            this.initiaveMiscTextBox.Size = new System.Drawing.Size(37, 22);
+            this.initiaveMiscTextBox.TabIndex = 5;
             // 
             // initiaveHelfLevelTextBox
             // 
+            this.initiaveHelfLevelTextBox.Enabled = false;
             this.initiaveHelfLevelTextBox.Location = new System.Drawing.Point(161, 32);
             this.initiaveHelfLevelTextBox.Name = "initiaveHelfLevelTextBox";
             this.initiaveHelfLevelTextBox.Size = new System.Drawing.Size(46, 22);
@@ -550,10 +600,12 @@
             // 
             // initiaveDexTextBox
             // 
+            this.initiaveDexTextBox.Enabled = false;
             this.initiaveDexTextBox.Location = new System.Drawing.Point(122, 32);
             this.initiaveDexTextBox.Name = "initiaveDexTextBox";
             this.initiaveDexTextBox.Size = new System.Drawing.Size(31, 22);
             this.initiaveDexTextBox.TabIndex = 7;
+            this.initiaveDexTextBox.TextChanged += new System.EventHandler(this.initiaveDexTextBox_TextChanged);
             // 
             // initiaveLabel
             // 
@@ -594,6 +646,15 @@
             this.speedGroubBox.TabIndex = 11;
             this.speedGroubBox.TabStop = false;
             this.speedGroubBox.Text = "Speed";
+            // 
+            // itemLabel
+            // 
+            this.itemLabel.AutoSize = true;
+            this.itemLabel.Location = new System.Drawing.Point(212, 16);
+            this.itemLabel.Name = "itemLabel";
+            this.itemLabel.Size = new System.Drawing.Size(40, 16);
+            this.itemLabel.TabIndex = 44;
+            this.itemLabel.Text = "ITEM";
             // 
             // textBox43
             // 
@@ -1705,6 +1766,142 @@
             this.skillGroupBox.TabStop = false;
             this.skillGroupBox.Text = "Skills";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(258, 464);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(36, 22);
+            this.textBox1.TabIndex = 170;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(258, 438);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(36, 22);
+            this.textBox3.TabIndex = 167;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(258, 411);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(36, 22);
+            this.textBox4.TabIndex = 168;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(258, 385);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(36, 22);
+            this.textBox5.TabIndex = 169;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(258, 356);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(36, 22);
+            this.textBox6.TabIndex = 154;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(258, 329);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(36, 22);
+            this.textBox7.TabIndex = 155;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(258, 303);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(36, 22);
+            this.textBox8.TabIndex = 156;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(258, 277);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(36, 22);
+            this.textBox9.TabIndex = 157;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(258, 251);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(36, 22);
+            this.textBox10.TabIndex = 158;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(258, 225);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(36, 22);
+            this.textBox11.TabIndex = 159;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(258, 199);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(36, 22);
+            this.textBox12.TabIndex = 160;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(258, 173);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(36, 22);
+            this.textBox13.TabIndex = 161;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox14.Location = new System.Drawing.Point(258, 147);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(36, 22);
+            this.textBox14.TabIndex = 162;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox15.Location = new System.Drawing.Point(258, 121);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(36, 22);
+            this.textBox15.TabIndex = 163;
+            // 
+            // textBox16
+            // 
+            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox16.Location = new System.Drawing.Point(258, 95);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(36, 22);
+            this.textBox16.TabIndex = 164;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox17.Location = new System.Drawing.Point(258, 69);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(36, 22);
+            this.textBox17.TabIndex = 165;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox18.Location = new System.Drawing.Point(258, 43);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(36, 22);
+            this.textBox18.TabIndex = 166;
+            // 
             // theiveryMiscTextBox
             // 
             this.theiveryMiscTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2611,6 +2808,7 @@
             // bloodiedCheckBox
             // 
             this.bloodiedCheckBox.AutoSize = true;
+            this.bloodiedCheckBox.Enabled = false;
             this.bloodiedCheckBox.Location = new System.Drawing.Point(88, 99);
             this.bloodiedCheckBox.Name = "bloodiedCheckBox";
             this.bloodiedCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -2814,177 +3012,57 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // itemLabel
+            // loadButton
             // 
-            this.itemLabel.AutoSize = true;
-            this.itemLabel.Location = new System.Drawing.Point(212, 16);
-            this.itemLabel.Name = "itemLabel";
-            this.itemLabel.Size = new System.Drawing.Size(40, 16);
-            this.itemLabel.TabIndex = 44;
-            this.itemLabel.Text = "ITEM";
+            this.loadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loadButton.Location = new System.Drawing.Point(802, 813);
+            this.loadButton.Name = "loadButton";
+            this.loadButton.Size = new System.Drawing.Size(75, 32);
+            this.loadButton.TabIndex = 53;
+            this.loadButton.Text = "Load";
+            this.loadButton.UseVisualStyleBackColor = true;
+            this.loadButton.Click += new System.EventHandler(this.loadButton_Click);
             // 
-            // textBox1
+            // openFileDialog1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(258, 464);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(36, 22);
-            this.textBox1.TabIndex = 170;
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox3
+            // saveButton
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(258, 438);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(36, 22);
-            this.textBox3.TabIndex = 167;
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.Location = new System.Drawing.Point(802, 853);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 32);
+            this.saveButton.TabIndex = 54;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // textBox4
+            // heightTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(258, 411);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(36, 22);
-            this.textBox4.TabIndex = 168;
+            this.heightTextBox.Location = new System.Drawing.Point(419, 32);
+            this.heightTextBox.Name = "heightTextBox";
+            this.heightTextBox.Size = new System.Drawing.Size(54, 20);
+            this.heightTextBox.TabIndex = 16;
             // 
-            // textBox5
+            // heightLabel
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(258, 385);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(36, 22);
-            this.textBox5.TabIndex = 169;
+            this.heightLabel.AutoSize = true;
+            this.heightLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.heightLabel.Location = new System.Drawing.Point(418, 8);
+            this.heightLabel.Name = "heightLabel";
+            this.heightLabel.Size = new System.Drawing.Size(56, 20);
+            this.heightLabel.TabIndex = 15;
+            this.heightLabel.Text = "Height";
             // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(258, 356);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(36, 22);
-            this.textBox6.TabIndex = 154;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(258, 329);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(36, 22);
-            this.textBox7.TabIndex = 155;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(258, 303);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(36, 22);
-            this.textBox8.TabIndex = 156;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(258, 277);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(36, 22);
-            this.textBox9.TabIndex = 157;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(258, 251);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(36, 22);
-            this.textBox10.TabIndex = 158;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(258, 225);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(36, 22);
-            this.textBox11.TabIndex = 159;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(258, 199);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(36, 22);
-            this.textBox12.TabIndex = 160;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(258, 173);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(36, 22);
-            this.textBox13.TabIndex = 161;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(258, 147);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(36, 22);
-            this.textBox14.TabIndex = 162;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(258, 121);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(36, 22);
-            this.textBox15.TabIndex = 163;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(258, 95);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(36, 22);
-            this.textBox16.TabIndex = 164;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(258, 69);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(36, 22);
-            this.textBox17.TabIndex = 165;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(258, 43);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(36, 22);
-            this.textBox18.TabIndex = 166;
-            // 
-            // levelUpButton
-            // 
-            this.levelUpButton.Location = new System.Drawing.Point(118, 30);
-            this.levelUpButton.Name = "levelUpButton";
-            this.levelUpButton.Size = new System.Drawing.Size(41, 20);
-            this.levelUpButton.TabIndex = 17;
-            this.levelUpButton.Text = "+";
-            this.levelUpButton.UseVisualStyleBackColor = true;
-            this.levelUpButton.Click += new System.EventHandler(this.levelUpButton_Click);
-            // 
-            // levelDownButton
-            // 
-            this.levelDownButton.Location = new System.Drawing.Point(24, 31);
-            this.levelDownButton.Name = "levelDownButton";
-            this.levelDownButton.Size = new System.Drawing.Size(41, 20);
-            this.levelDownButton.TabIndex = 18;
-            this.levelDownButton.Text = "-";
-            this.levelDownButton.UseVisualStyleBackColor = true;
-            this.levelDownButton.Click += new System.EventHandler(this.levelDownButton_Click);
-            // 
-            // CharacterhStatsForm
+            // CharacterStatsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 907);
             this.ControlBox = false;
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.loadButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.languagesGroupBox);
             this.Controls.Add(this.featsGroupBox);
@@ -2998,7 +3076,7 @@
             this.Controls.Add(this.expGroupBox);
             this.Controls.Add(this.atributesGroupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "CharacterhStatsForm";
+            this.Name = "CharacterStatsForm";
             this.Text = "Character Stats";
             this.atributesGroupBox1.ResumeLayout(false);
             this.atributesGroupBox1.PerformLayout();
@@ -3050,7 +3128,7 @@
         private System.Windows.Forms.Label initiaveMiscLabel;
         private System.Windows.Forms.Label initiaveHalfLevelLabel;
         private System.Windows.Forms.Label initiaveDexLabel;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox initiaveMiscTextBox;
         private System.Windows.Forms.TextBox initiaveHelfLevelTextBox;
         private System.Windows.Forms.TextBox initiaveDexTextBox;
         private System.Windows.Forms.Label initiaveLabel;
@@ -3301,6 +3379,14 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Button levelDownButton;
         private System.Windows.Forms.Button levelUpButton;
+        private System.Windows.Forms.Button loadButton;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.TextBox nameTextBox;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.TextBox heightTextBox;
+        private System.Windows.Forms.Label heightLabel;
     }
 }
 
